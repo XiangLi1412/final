@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8" />
+		
+		<title>日旺水電-個人管理</title>
+		
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/company.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/signIn.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/aboutMe.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/person.css"/>
+		<link rel="stylesheet" href="../assets/font_5.13/css/all.min.css">
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+		
+		<script src="../assets/js/jquery-3.4.1.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/base.js"></script>
+		<script src="../assets/js/aboutMe.js"></script>
+		<script src="../assets/js/register.js"></script>
+	</head>
+	<body class="body">
+		<!-- <div style="width: 360px; background-color: lightblue;">360px</div> -->
+		<!-- <div style="width: 540px; background-color: lightgreen;">540px</div> -->
+		<!-- <div style="width: 768px; background-color: lightgreen;">768px</div> -->
+		<!-- <div style="width: 1024px; background-color: lightgreen;">1024px</div> -->
+		<!-- <div style="width: 1200px; background-color: red;">1200px</div> -->
+		<!-- <div style="width: 1500px; background-color: lightblue;">1500px</div> -->
+		
+		
+		<div class="bg_dgreen top"></div>
+		<header class="header">
+			<div class="burger_all" onclick="open_link()">
+				<i class="fas fa-bars burger"></i>
+			</div>
+			<img class="firm_img" src="../assets/image/firm.jpg" onclick="img_toindex2()">
+			<!-- <div class="company_name">日旺水電</div> -->
+			<div class="phone">
+				<font class="mr10">李小明 您好</font>
+				<font class="mr10 signin_top" onclick="toSignIn2()">登入</font>
+				<font class="mr10 stra_line">|</font>
+				<font class="mr10" id="hr_min">00:00</font> 
+			</div>
+		</header>
+		<section class="link_input" id="link">
+			<div class="link">
+				<div class="bg_red" onclick="toPri_index()">首頁</div>
+				<div class="bg_orange" onclick="to_product()">產品特區</div>
+				<div class="bg_green" onclick="to_me()">關於我們</div>
+				<div class="bg_blue"  onclick="to_member()">個人管理</div>
+				<div class="bg_purple"  onclick="to_cart()">購屋車 (6)</div>
+			</div>
+			<!-- <div class="search_all"> -->
+				<!-- <input type="text" class="search_input"> -->
+			<!-- </div> -->
+		</section>
+		
+		
+		<section class="btn_all" id="btn_all">
+			<div class="btn_title" onclick="switch1()">我的個人資訊</div>
+			<div class="btn_title" onclick="switch2()">修改個人資訊</div>
+			<div class="btn_title" onclick="switch3()">我的購買紀錄</div>
+			<div class="btn_title" onclick="switch4()">我的產品評分</div>
+		</section>
+		
+		
+		
+		
+		<!-- <section class="member_all"> -->
+			
+			<!-- <div class="member_item"> -->
+				<!-- <div class="member_info"> -->
+					<!-- <div class="member_title">我的個人資訊</div> -->
+					<!-- <div><font class="attr">姓氏:</font><font> 李</font></div> -->
+					<!-- <div><font class="attr">名子:</font><font> 智翔</font></div> -->
+					<!-- <div><font class="attr">密碼:</font><font> asdqwe123456</font></div> -->
+					<!-- <div><font class="attr">手機:</font><font> 0982939400</font></div> -->
+					<!-- <div><font class="attr">信箱:</font><font> faker54068@gmail.com</font></div> -->
+				<!-- </div> -->
+				<!-- <div class="member_revise"> -->
+					<!-- <div class="member_title">修改個人資訊</div> -->
+					<!-- <div><font class="attr">姓氏: </font><input type="text"></div> -->
+					<!-- <div><font class="attr">名子: </font><input type="text"></div> -->
+					<!-- <div><font class="attr">密碼: </font><input type="text"></div> -->
+					<!-- <div><font class="attr">手機: </font><input type="text"></div> -->
+					<!-- <div><font class="attr">信箱: </font><input type="text"></div> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<!-- <div class="member_item">我的購買紀錄</div> -->
+			<!-- <div class="member_item">我的評論與評分</div> -->
+		<!-- </section> -->
+		
+
+		
+		
+		<!-- 我的個人資訊 1-->
+		<section class="info_all" id="person_info">
+			<div class="all_black"></div>
+			<div class="member_info">
+				<div class="cen">
+					<div class="member_title">我的個人資訊</div>
+				</div>
+				<div class="cen">
+					<div class="info_cont">
+						<div><font class="attr">姓氏:</font><font> 李</font></div>
+						<div><font class="attr">名子:</font><font> 小明</font></div>
+						<div><font class="attr">密碼:</font><font> asdqwe123456</font></div>
+						<div><font class="attr">手機:</font><font> 0982939400</font></div>
+						<div><font class="attr">信箱:</font><font> faker54068@gmail.com</font></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="close1" onclick="switch1()">X</div>
+		
+		
+		<!-- 我的個人資訊2 -->
+		<section class="info_all" id="person_revise">
+			<div class="all_black"></div>
+			<div class="member_info">
+				<div class="cen">
+					<div class="member_title">修改個人資訊</div>
+				</div>
+				<div class="cen">
+					<div class="info_cont">
+						<div><font class="attr">姓氏: </font><input type="text"></div>
+						<div><font class="attr">名子: </font><input type="text"></div>
+						<div><font class="attr">密碼: </font><input type="text"></div>
+						<div><font class="attr">手機: </font><input type="text"></div>
+						<div><font class="attr">信箱: </font><input type="email"></div>
+						<input class="btn btn-primary btn_revise" type="button" value="修改">
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="close2" onclick="switch2()">X</div>
+		
+		
+		<!-- 我的個人資訊 3 -->
+		<section class="info_all" id="person_buy">
+			<div class="all_black"></div>
+			<div class="member_info">
+				<div class="cen">
+					<div class="member_title">我的購買紀錄</div>
+				</div>
+				<div class="cen">
+					<div class="buy_cont">
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> DIY小五金 塑膠壁虎(25PCS)</font></div>
+							<div><font class="attr">數量:</font><font> 20</font></div>
+							<div><font class="attr">單價:</font><font> $NT 10</font></div>
+							<div><font class="attr">總計:</font><font> $NT 200</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> DIY小五金 木螺絲2.5”(10P)</font></div>
+							<div><font class="attr">數量:</font><font> 30</font></div>
+							<div><font class="attr">單價:</font><font> $NT 20</font></div>
+							<div><font class="attr">總計:</font><font> $NT 600</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> 【旭光】65W LED大型球泡燈</font></div>
+							<div><font class="attr">數量:</font><font> 1</font></div>
+							<div><font class="attr">單價:</font><font> $NT 1390</font></div>
+							<div><font class="attr">總計:</font><font> $NT 1390</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> 【旭光】LED 10W球泡燈-超值10入裝</font></div>
+							<div><font class="attr">數量:</font><font> 1</font></div>
+							<div><font class="attr">單價:</font><font> $NT 888</font></div>
+							<div><font class="attr">總計:</font><font> $NT 888</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> 【新月光基本款】二開關蓋版</font></div>
+							<div><font class="attr">數量:</font><font> 10</font></div>
+							<div><font class="attr">單價:</font><font> $NT 260</font></div>
+							<div><font class="attr">總計:</font><font> $NT 2600</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> PowerSync 單開關蓋板組 (PW-5152)</font></div>
+							<div><font class="attr">數量:</font><font> 1</font></div>
+							<div><font class="attr">單價:</font><font> $NT 286</font></div>
+							<div><font class="attr">總計:</font><font> $NT 286</font></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="close3" onclick="switch3()">X</div>
+		
+		<!-- 我的個人資訊 4 -->
+		<section class="info_all" id="person_comme">
+			<div class="all_black"></div>
+			<div class="member_info">
+				<div class="cen">
+					<div class="member_title">我的產品評分</div>
+				</div>
+				<div class="cen">
+					<div class="buy_cont">
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> 【旭光】LED 13W 球泡燈-晝光色4入</font></div>
+							<div><font class="attr">評分:</font><font class="orange"> ★★★★</font><font class="gray"></font></div>
+							<div><font class="attr">評論:</font><font> 我認為這產品很棒，我用了將近10年，這燈都還沒壞呢!</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> DEWALT 3.5M*16mm 專業捲尺 DWHT36155</font></div>
+							<div><font class="attr">評分:</font><font class="orange"> ★★★★</font><font class="gray"></font></div>
+							<div><font class="attr">評論:</font><font> 我認為這產品很棒，我用了將近20年，這捲尺都還沒壞呢!</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> Wera 十字起子(鍍鈦怪牙型) 350-PH1x80</font></div>
+							<div><font class="attr">評分:</font><font class="orange"> ★★★★</font><font class="gray"></font></div>
+							<div><font class="attr">評論:</font><font> 我認為這產品很棒，我用了將近30年，這十字起子都還沒壞呢!</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> DIY小五金 鑽尾螺絲8#*5/8”(20P)</font></div>
+							<div><font class="attr">評分:</font><font class="orange"> ★★★★</font><font class="gray"></font></div>
+							<div><font class="attr">評論:</font><font> 我認為這產品很棒，我用了將近40年，這螺絲都還沒壞呢!</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> 【新月光基本款】一開關蓋版</font></div>
+							<div><font class="attr">評分:</font><font class="orange"> ★★★★</font><font class="gray"></font></div>
+							<div><font class="attr">評論:</font><font> 我認為這產品很棒，我用了將近30年，這蓋板都還沒壞呢!</font></div>
+						</div>
+						<div class="buy1">
+							<div><font class="attr">品名:</font><font> PowerSync 極光四開關蓋板(ET-4)</font></div>
+							<div><font class="attr">評分:</font><font class="orange"> ★★★★</font><font class="gray"></font></div>
+							<div><font class="attr">評論:</font><font> 我認為這產品很棒，我用了將近20年，這開關都還沒壞呢!</font></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="close4" onclick="switch4()">X</div>
+		
+
+		
+		<footer class="footer">
+			<div>Copyright © 2020 日旺水電. &nbsp;</div>
+			<div>All rights reserved by</div>
+		</footer>
+		
+		
+		<script src="../assets/js/burger.js"></script>
+		<script src="../assets/js/person.js"></script>
+	</body>
+</html>
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8" />
+		
+		<title>日旺水電-關於我們</title>
+		
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/signIn.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/aboutMe.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/company.css"/>
+		<link rel="stylesheet" href="../assets/font_5.13/css/all.min.css">
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+		
+		<script src="../assets/js/jquery-3.4.1.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/base.js"></script>
+		<script src="../assets/js/aboutMe.js"></script>
+		<script src="../assets/js/register.js"></script>
+	</head>
+	<body class="body">
+		<!-- <div style="width: 360px; background-color: lightblue;">360px</div> -->
+		<!-- <div style="width: 540px; background-color: lightgreen;">540px</div> -->
+		<!-- <div style="width: 768px; background-color: lightgreen;">768px</div> -->
+		<!-- <div style="width: 1024px; background-color: lightgreen;">1024px</div> -->
+		<!-- <div style="width: 1200px; background-color: red;">1200px</div> -->
+		<!-- <div style="width: 1500px; background-color: lightblue;">1500px</div> -->
+		
+		<div class="bg_dgreen top"></div>
+		<header class="header">
+			<div class="burger_all" onclick="open_link()">
+				<i class="fas fa-bars burger"></i>
+			</div>
+			<img class="firm_img" src="../assets/image/firm.jpg" onclick="img_toindex2()">
+			<!-- <div class="company_name">日旺水電</div> -->
+			<div class="phone">
+				<font class="mr10">李小明 您好</font>
+				<font class="mr10 signin_top" onclick="toSignIn2()">登入</font>
+				<font class="mr10 stra_line">|</font>
+				<font class="mr10" id="hr_min">00:00</font> 
+			</div>
+		</header>
+		<section class="link_input" id="link">
+			<div class="link">
+				<div class="bg_red" onclick="toPri_index()">首頁</div>
+				<div class="bg_orange" onclick="to_product()">產品特區</div>
+				<div class="bg_green" onclick="to_me()">關於我們</div>
+				<div class="bg_blue"  onclick="to_member()">個人管理</div>
+				<div class="bg_purple"  onclick="to_cart()">購屋車 (6)</div>
+			</div>
+			<!-- <div class="search_all"> -->
+				<!-- <input type="text" class="search_input"> -->
+			<!-- </div> -->
+		</section>
+		
+		<section class="we_all">
+			<div class="shop_text blink">關於作者</div>
+			<div class="we_cont">
+				
+				
+				
+				<div class="person">
+					<img class="person_img" src="../assets/image/long.jpg">
+					<div class="img_all">
+						<img src="../assets/image/LINE-ICON.png" onclick="to_yungLINE()">
+						<img src="../assets/image/FB-ICON.png" onclick="to_yungFB()">
+						<img src="../assets/image/IG-ICON.png" onclick="to_yungIG()">
+					</div>
+					<div>Name : 楊鎧溶</div>
+					<div>Department : 資管三乙</div>
+					<div>Interest : 聽音樂、打羽球、看電影</div>
+					<div>Main Task : (前端) 文書處理</div>
+					<div>Feelings : 這次專案中我認為最困難的是網頁排版，因為我們必須參考許多相關網頁，並且換位思考假設我們是消費者會喜歡怎樣的介面以及希望有甚麼功能，然而把這些需求放進頁面時候，又會面臨網頁跑版等問題。雖然過程中充滿許多挑戰，但也增添了我許多的技能，感到非常值得!!!</div>
+				</div>
+				
+				
+				<div class="person">
+					<img class="person_img" src="../assets/image/xiang.jpg">
+					<div class="img_all">
+						<img src="../assets/image/LINE-ICON.png" onclick="to_xiangLINE()">
+						<img src="../assets/image/FB-ICON.png" onclick="to_xiangFB()">
+						<img src="../assets/image/IG-ICON.png" onclick="to_xiangIG()">
+					</div>
+					<div>Name : 李智翔</div>
+					<div>Department : 會計四乙</div>
+					<div>Interest : 打籃球、寫遊戲、算數學</div>
+					<div>Main Task : (前端) 網頁撰寫</div>
+					<div>Feelings : 寫這份專案對我來說真的是很有挑戰，由於系上還有畢業考要考，這導致我比較晚開工，能撰寫網頁的時間只有短短的5天，RWD的設計過程有點困難，有些畫面要在手機上呈現真的很難規劃，配色也是一個問題，但很開心可以用這麼短的時間做出如此的專案，一切都很值得!!!</div>
+					
+				</div>
+				
+				<div class="person">
+					<img class="person_img" src="../assets/image/rain.jpg">
+					<div class="img_all">
+						<img src="../assets/image/LINE-ICON.png" onclick="to_rainLINE()">
+						<img src="../assets/image/FB-ICON.png" onclick="to_rainFB()">
+						<img src="../assets/image/IG-ICON.png" onclick="to_rainIG()">
+					</div>
+					<div>Name : 吳雨臻</div>
+					<div>Department : 資管二甲</div>
+					<div>Interest : 吃XD</div>
+					<div>Main Task : (後端) 功能實作</div>
+					<div>Feelings : 雖然我們歷經過一次前後端的合作，但我們發現原來後端並沒有想像中的那麼簡單，有資料庫要連、資料表的欄位要規劃，當資料庫裡的資料無法再網頁畫面中呈現時，真的會有點痛苦，但只要投入的時間越多，遇到更多的問題，越是能讓我們進步，讓我很有成就感!!!</div>	
+				</div>
+				
+				<div class="person">
+					<img class="person_img" src="../assets/image/ping.jpg">
+					<div class="img_all">
+						<img src="../assets/image/LINE-ICON.png" onclick="to_pingLINE()">
+						<img src="../assets/image/FB-ICON.png" onclick="to_pingFB()">
+						<img src="../assets/image/IG-ICON.png" onclick="to_pingIG()">
+					</div>
+					<div>Name : 陳品孜</div>
+					<div>Department : 資管二甲</div>
+					<div>Interest : 吃XD</div>
+					<div>Main Task : (後端) 功能實作</div>
+					<div>Feelings : 經過這次專案的洗禮，我覺得我學到了很多知識，資料庫的建立、資料表的欄位規劃、讀存資料表的資料，每一項都讓我吃到苦頭，但也讓我感到很充實，隨著時間的經過，漸漸的清楚哪些功能應該如何實做會比較快速，一切都很值得，很開心能參與此專案!!!</div>	
+				</div>
+			</div>
+			
+			
+
+			<div class="shop_text blink">關於店家</div>
+			<div class="shop_intro">公司名稱：日旺水電材料行</div>
+			<div class="shop_intro">成立時間：2020 / 04 / 23</div>
+			<div class="shop_intro">連絡電話：(03) 491-8555</div>
+			<div class="shop_intro">傳真號碼：(03) 281-3778</div>
+			<!-- <div class="shop_intro">客服專線：0982-939-400</div> -->
+			<div class="shop_intro">公司位址：桃園市平鎮區文化街17號</div>
+			<div class="shop_intro">服務時間：07:00 ~ 18:00 (假日公休)</div>
+			<div class="shop_intro blink">下方地圖有錯!!! 我們是17號喔!!!</div>
+			<div class="shop">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.286179236236!2d121.20083734992038!3d24.956376183930253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ba2ed040a5%3A0x56dba08eb7b9a8db!2z5pel5pe65rC06Zu75p2Q5paZ6KGM!5e0!3m2!1szh-TW!2stw!4v1591450182620!5m2!1szh-TW!2stw" width="90%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</section>
+		
+		<script src="../assets/js/burger.js"></script>
+
+		<footer class="footer">
+			<div>Copyright © 2020 日旺水電. &nbsp;</div>
+			<div>All rights reserved by</div>
+		</footer>
+	</body>
+</html>
+
+

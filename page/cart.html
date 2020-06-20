@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8" />
+		
+		<title>日旺水電-購物車</title>
+		
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/company.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/signIn.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/aboutMe.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/good.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/cart.css"/>
+		<link rel="stylesheet" href="../assets/font_5.13/css/all.min.css">
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+		
+		<script src="../assets/js/jquery-3.4.1.min.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/base.js"></script>
+		<script src="../assets/js/aboutMe.js"></script>
+		<script src="../assets/js/register.js"></script>
+	</head>
+	<body class="body">
+		<!-- <div style="width: 360px; background-color: lightblue;">360px</div> -->
+		<!-- <div style="width: 540px; background-color: lightgreen;">540px</div> -->
+		<!-- <div style="width: 768px; background-color: lightgreen;">768px</div> -->
+		<!-- <div style="width: 1024px; background-color: lightgreen;">1024px</div> -->
+		<!-- <div style="width: 1200px; background-color: red;">1200px</div> -->
+		<!-- <div style="width: 1500px; background-color: lightblue;">1500px</div> -->
+		
+		<div class="bg_dgreen top"></div>
+		<header class="header">
+			<div class="burger_all" onclick="open_link()">
+				<i class="fas fa-bars burger"></i>
+			</div>
+			<img class="firm_img" src="../assets/image/firm.jpg" onclick="img_toindex2()">
+			<!-- <div class="company_name">日旺水電</div> -->
+			<div class="phone">
+				<font class="mr10">李小明 您好</font>
+				<font class="mr10 signin_top" onclick="toSignIn2()">登入</font>
+				<font class="mr10 stra_line">|</font>
+				<font class="mr10" id="hr_min">00:00</font> 
+			</div>
+		</header>
+		<section class="link_input" id="link">
+			<div class="link">
+				<div class="bg_red" onclick="toPri_index()">首頁</div>
+				<div class="bg_orange" onclick="to_product()">產品特區</div>
+				<div class="bg_green" onclick="to_me()">關於我們</div>
+				<div class="bg_blue"  onclick="to_member()">個人管理</div>
+				<div class="bg_purple"  onclick="to_cart()">購屋車 (6)</div>
+			</div>
+			<!-- <div class="search_all"> -->
+				<!-- <input type="text" class="search_input"> -->
+			<!-- </div> -->
+		</section>
+		
+		<section>
+			<div class="title_hot blink">待購商品</div>
+			<div class="cen mt-y">
+				<div class="block_list">
+					<div class="product">
+						<div class=""><font>品名: </font><font>【旭光】23W螺旋省電燈泡-20入裝</font></div>
+						<div class=""><font>單價: </font><font>NT$ 1580</font></div>
+						<div class=""><font>數量: </font><input type="text" value="1" id="num1" onchange="ch1()"></div>
+						<div class=""><font>小計: </font><font id="sma1">NT$ 1580</font></div>
+						<div class="cen">
+							<input class="btn btn_del" type="button" value="Delete" onclick="showDel()">
+						</div>						
+					</div>
+					<div class="product">
+						<div class=""><font>品名: </font><font>【旭光】LED 10W球泡燈-超值10入裝</font></div>
+						<div class=""><font>單價: </font><font>NT$ 888</font></div>
+						<div class=""><font>數量: </font><input type="text" value="1" id="num2" onchange="ch2()"></div>
+						<div class=""><font>小計: </font><font id="sma2">NT$ 888</font></div>
+						<div class="cen">
+							<input class="btn btn_del" type="button" value="Delete" onclick="showDel()">
+						</div>						
+					</div>
+					<div class="product">
+						<div class=""><font>品名: </font><font>DIY小五金 鑽尾螺絲8#*5/8”(20P)</font></div>
+						<div class=""><font>單價: </font><font>NT$ 20</font></div>
+						<div class=""><font>數量: </font><input type="text" value="1" id="num3" onchange="ch3()"></div>
+						<div class=""><font>小計: </font><font id="sma3">NT$ 20</font></div>
+						<div class="cen">
+							<input class="btn btn_del" type="button" value="Delete" onclick="showDel()">
+						</div>						
+					</div>
+					<div class="product">
+						<div class=""><font>品名: </font><font>DIY小五金 鐵板牙螺絲3”(5P)</font></div>
+						<div class=""><font>單價: </font><font>NT$ 20</font></div>
+						<div class=""><font>數量: </font><input type="text" value="1" id="num4" onchange="ch4()"></div>
+						<div class=""><font>小計: </font><font id="sma4">NT$ 20</font></div>
+						<div class="cen">
+							<input class="btn btn_del" type="button" value="Delete" onclick="showDel()">
+						</div>						
+					</div>
+					<div class="product">
+						<div class=""><font>品名: </font><font>【新月光基本款】接地雙插座蓋版</font></div>
+						<div class=""><font>單價: </font><font>NT$ 110</font></div>
+						<div class=""><font>數量: </font><input type="text" value="1" id="num5" onchange="ch5()"></div>
+						<div class=""><font>小計: </font><font id="sma5">NT$ 110</font></div>
+						<div class="cen">
+							<input class="btn btn_del" type="button" value="Delete" onclick="showDel()">
+						</div>						
+					</div>
+					<div class="product">
+						<div class=""><font>品名: </font><font>【新月光基本款】一開關一接地蓋版</font></div>
+						<div class=""><font>單價: </font><font>NT$ 270</font></div>
+						<div class=""><font>數量: </font><input type="text" value="1" id="num6" onchange="ch6()"></div>
+						<div class=""><font>小計: </font><font id="sma6">NT$ 270</font></div>
+						<div class="cen">
+							<input class="btn btn_del" type="button" value="Delete" onclick="showDel()">
+						</div>						
+					</div>
+				</div>						
+			</div>
+			<br>
+			
+			<div class="title_hot blink">商品總額</div>
+			<div class="cen mt-y">
+				<div class="block_list">
+					<div class="product">
+						<div class=""><font>合計: </font><font id="mege_cout">NT$ 2888</font></div>
+						<div class=""><font>運費: </font><font>FREE</font></div>
+						<div class=""><font>總計: </font><font id="totl_cout">NT$ 2888</font></div>
+						<div class="cen">
+							<input class="btn btn_buy" type="button" value="Pay the bill" onclick="showPay()">
+						</div>						
+					</div>
+				</div>						
+			</div>
+		</section>
+		<br>
+		<br>
+
+		<script src="../assets/js/burger.js"></script>
+		<script src="../assets/js/cart.js"></script>
+		
+		<footer class="footer">
+			<div>Copyright © 2020 日旺水電. &nbsp;</div>
+			<div>All rights reserved by</div>
+		</footer>
+	</body>
+</html>
+
+
