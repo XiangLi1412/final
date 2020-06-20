@@ -1,0 +1,136 @@
+/* 登入的大框框 */
+.signIn_all{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+	margin: 80px 0px 50px;
+	width: 68%;
+	border: 2px #e2e2e2 solid;
+	border-radius: 60px;
+	/* text-shadow: 7px 7px 8px; */
+	box-shadow: -40px -40px 10px #888;
+	transition: 1s;
+	background-color: #fee;
+}
+
+/* 陰影變色 */
+.signIn_all:hover{
+	box-shadow: -30px -30px 10px #444;
+}
+
+
+/* 登入的文字 */
+.title_signIn{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0px;
+	width: 200px;
+	font-size: 46px;
+	/* color: gray; */
+}
+
+
+/* 登入頁面中的全部輸入框 */
+.signIn_input{
+	border-radius: 70px;
+	border: 2px gray solid;
+	padding: 15px 40px;
+	width: 80%;
+	font-size: 28px !important;
+	margin-bottom: 20px;
+}
+
+/* 輸入框被關注 */
+.signIn_input:focus{
+	/* font-weight: bold; */
+	border: 3px red solid;
+	outline: white 0px solid;
+}
+
+/* 登入按鈕 */
+.btn_signIn{
+	width: 60%;
+	font-weight: normal !important;
+	border: 0px #0097a0 solid !important;
+}
+
+/* 登入按鈕被滑過時 */
+.btn_signIn:hover{
+	/* background-color: #0097a0 !important; */
+}
+
+
+/* 詢問是不是會員 */
+.isMember{
+	margin-bottom: 30px;
+	font-size: 28px;
+}
+
+
+/* 驗證碼的圖片 */
+.img_check{
+	width: 70%;
+	height: 50%;
+	margin-bottom: 30px;
+}
+
+/* 按我加入會員的文字 */
+.turnMember{
+	text-decoration: underline;
+}
+
+/* 包checkbox的全部 */
+.chkbx{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+
+/* .fix{ */
+	/* position: fixed; */
+	/* bottom: 0px; */
+	/* width: 100%; */
+/* } */
+
+
+@media(min-width: 320px){
+	.signIn_input, .isMember{
+		font-size: 18px !important;
+		/* color: red; */
+	}
+	
+	.title_signIn{
+		font-size: 26px !important;
+	}
+	
+	.checkbox_text{
+		font-size: 16px ;
+	}
+
+}
+@media(min-width: 540px){
+	.signIn_input, .title_signIn, .isMember{
+		font-size: 26px !important;
+		/* color: green; */
+	}
+	
+	.checkbox_text{
+		font-size: 28px ;
+	}
+}
+@media(min-width: 1200px){
+	.signIn_input, .title_signIn, .isMember{
+		font-size: 36px !important;
+		/* color: red; */
+	}
+}
+
+
+
+
+
+
+

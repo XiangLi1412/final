@@ -1,0 +1,93 @@
+/* 包購買產品大區塊 */
+.block_list{
+	margin-top: 50px;
+	font-size: 30px	;
+}
+
+.title_hot{
+	color: black;
+	font-weight: bold;
+}
+
+/* 讓產品分開些 */
+.product > div{
+	margin-bottom: 15px;
+}
+
+/* 單一產品背景顏色 */
+.product{
+	width: 45% !important;
+	background-color: #ffffee;
+}
+
+
+.mr10{
+	margin-right: -5px !important;
+}
+
+
+
+@media(min-width: 0px){
+	.product{
+		width: 100% !important;
+	}
+}
+@media(min-width: 320px){
+	.product{
+		width: 100% !important;
+	}
+}
+@media(min-width: 600px){
+	.product{
+		width: 100% !important;
+	}
+}
+@media(min-width: 900px){
+	.product{
+		width: 45% !important;
+	}
+}
+@media(min-width: 1200px){
+	.product{
+		width: 31% !important;
+	}
+}
+@media(min-width: 1500px){
+	.product{
+		width: 31% !important;
+	}
+}
+
+
+
+input{
+	width: 80px;
+}
+
+
+.mt-y{
+	margin-top: -30px;
+}
+
+.btn_del{
+	width: 150px !important;
+	background-color: #dc3545 !important;
+	order: #ffffff 2px solid !important;
+}
+.btn_del:hover{
+	background-color: #ffffff !important;
+	color: #dc3545 !important;
+	border: #dc3545 2px solid !important;
+}
+
+
+.btn_buy{
+	width: 200px !important;
+	background-color: #007bff !important;
+	order: #ffffff 2px solid !important;
+}
+.btn_buy:hover{
+	background-color: #ffffff !important;
+	color: #007bff !important;
+	border: #007bff 2px solid !important;
+}

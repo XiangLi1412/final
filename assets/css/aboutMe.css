@@ -1,0 +1,192 @@
+/* 擺4個人+上方文字的大區塊 */
+.we_all{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	position: relative;
+	left: 3%;
+	width: 94%;
+	/* background-color: #ccc; */
+}
+
+
+/* 擺4個人的內容 */
+.we_cont{
+	display: flex;
+	justify-content: space-around;
+	/* align-items: center; */
+	width: 100%;
+	flex-wrap: wrap;
+	/* border: 1px solid black; */
+	/* background-color: lightgreen; */
+}
+
+
+/* 一個人 */
+.person{
+	width: 48%;
+	padding: 36px;
+	margin-bottom: 40px;
+	/* background-color: #ffe3b9; */
+	/* background-image: url(../image/7.jpg); */
+	/* background-attachment: fixed; */
+	/* background-size: cover; */
+	border: 1px dashed black;
+	border-radius: 30px;
+	background-color: rgba(255, 192, 203, 0.4);
+	/* background-color: #ffffee; */
+}
+
+
+
+/* 各個網頁的大標題 */
+.title_about{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 80px;
+	color: #ffa500;
+	/* color: red; */
+	/* background-color: #ddd; */
+}
+
+
+/* 人的照片 */
+.person_img{
+	width: 100%;
+	height: 400px;
+	/* cursor: pointer; */
+}
+
+.img_all > img{
+	cursor: pointer;
+}
+
+
+
+@media(min-width: 0px){
+	.person{
+		width: 100%;
+	}
+	
+	.person_img{
+		height: 200px;
+	}
+}
+@media(min-width: 320px){
+	.person{
+		width: 100%;
+		font-size: 17px;
+	}
+}
+@media(min-width: 600px){
+	.person_img{
+		height: 300px;
+	}
+}
+@media(min-width: 700px){
+	.person{
+		width: 95%;
+		font-size: 18px;
+	}
+	
+	.person_img{
+		height: 300px;
+	}
+}
+@media(min-width: 900px){
+	.person{
+		width: 48%;
+		font-size: 20px;
+	}
+	
+	.person_img{
+		height: 400px;
+	}
+}
+@media(min-width: 1200px){
+	.person{
+		width: 48%;
+		font-size: 28px;
+	}
+	
+	.person_img{
+		height: 500px;
+	}
+}
+@media(min-width: 1500px){
+	.person{
+		width: 48%;
+		font-size: 28px;
+	}
+	
+	.person_img{
+		height: 600px;
+	}
+}
+@media(min-width: 1800px){
+	.person{
+		width: 48%;
+		font-size: 28px;
+	}
+	
+	.person_img{
+		height: 750px;
+	}
+}
+@media(min-width: 2100px){
+	.person{
+		width: 48%;
+		font-size: 28px;
+	}
+	
+	.person_img{
+		height: 870px;
+	}
+}
+
+
+
+/* 內容要隔開 */
+.person > div{
+	margin-top: 20px;
+}
+
+
+/* line fb ig */
+.img_all{
+	display: flex;
+}
+
+/* line fb ig */
+.img_all > img{
+	width: 50px;
+	margin-right: 15px;
+}
+
+/* 店家 */
+.shop{
+	/* display: flex; */
+	/* justify-content: center; */
+	width: 100%;
+}
+
+/* 店家文字 */
+.shop_text{
+	/* color: #A0522D; */
+	/* font-size: 46px; */
+	/* margin: 40px 0px 20px; */
+	text-align: center;
+	margin-top: 20px;
+	font-size: 80px;
+	font-weight: bold;
+	color: black !important;
+	/* color: #11c65d; */
+	/* color: #ffa500; */
+}
+
+
+/* 店家介紹 */
+.shop_intro{
+	margin-bottom: 15px;
+}

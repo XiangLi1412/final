@@ -1,0 +1,300 @@
+/* 包4個按鈕 */
+.btn_all{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	position: relative;
+	left: 5%;
+	margin-top: 70px;
+	width: 90%;
+}
+
+
+
+/* 按鈕 */
+.btn_title{
+	/* display: none; */
+	/* is meis meis meis meis meis meis meis meis meis meis meis meis meis meis meis me */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	width: 40%;
+	margin-bottom: 60px;
+	color: white;
+	height: 150px;
+	font-size: 32px;
+	cursor: pointer;
+	background-color: #99411C;
+}
+
+.btn_title:hover{
+	background-color: #692301;
+}
+
+
+
+
+
+
+/* 包個人資訊 全部 */
+.info_all{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	display: none;
+	z-index: 992;
+}
+
+
+/* 背景全黑 */
+.all_black{
+	position: fixed;
+	background-color: black;
+	opacity: 0.8;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* 會員的資料 單一頁面 */
+.member_info{
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	position: absolute;
+	left: calc(10%) !important;
+	/* margin-left: calc((100% - 560px)/2); */
+	width: 80%;
+	top: 110px;
+	font-size: 14px;
+	padding: 10px 30px;
+	margin-bottom: 50px;
+	background-color: #edd;
+}
+
+/* 大標題 */
+.member_title{
+	display: flex;
+	justify-content: center;
+	width: 280px;
+	font-size: 28px;
+	padding: 10px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	background-color: #A0522D;
+	/* 上面是深咖啡色 */
+}
+
+
+.info_cont > div , .member_revise > div , .buy1 > div {
+	margin-bottom: 25px;
+	word-wrap: break-word;
+	font-size: 22px;
+}
+
+.info_cont{
+	/* background-color: #ccc; */
+}
+
+#close1, #close2, #close3, #close4{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	visibility: hidden;
+	color: white !important;
+	font-size: 40px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+
+input{
+	width: 200px;
+	height: 40px;
+	outline: solid 1px gray;
+}
+input:focus{
+	outline: red 2px solid;
+}
+
+.btn_revise{
+	position: relative;
+	left: calc((100% - 200px)/2);
+	outline: none;
+	padding-bottom: 40px !important;
+	font-size: 24px !important;
+}
+
+
+
+.buy_cont{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.buy1{
+	width: 95%;
+	padding: 20px;
+	margin-bottom: 40px;
+	border: 2px solid #A0522D;
+	border-radius: 30px;
+	background-color: #fff;
+	/* background-color: #dfbfff; */
+}
+
+
+@media(min-width: 0px){
+	.buy1{
+		width: 100%;
+	}
+	
+	.btn_title{
+		width: 100%;
+	}
+	
+	.btn_title{
+		font-size: 35px;
+	}
+	
+	.info_cont > div , .member_revise > div , .buy1 > div {
+		font-size: 14px;
+	}
+	
+}
+@media(min-width: 320px){
+	.buy1{
+		width: 100%;
+	}
+	
+	.btn_title{
+		width: 100%;
+	}
+	
+	.btn_title{
+		font-size: 35px;
+	}
+	
+	.info_cont > div , .member_revise > div , .buy1 > div {
+		font-size: 20px;
+	}
+	
+}
+@media(min-width: 600px){
+	.buy1{
+		width: 100%;
+	}
+	
+	.btn_title{
+		width: 100%;
+	}
+	
+	.btn_title{
+		font-size: 40px;
+	}
+	
+	.info_cont > div , .member_revise > div , .buy1 > div {
+		font-size: 30px;
+	}
+}
+@media(min-width: 900px){
+	.buy1{
+		width: 46%;
+	}
+	
+	.btn_title{
+		width: 44%;
+	}
+	
+	.btn_title{
+		font-size: 40px;
+	}
+}
+@media(min-width: 1200px){
+	.buy1{
+		width: 46%;
+	}
+	
+	.btn_title{
+		width: 44%;
+	}
+	
+	.btn_title{
+		font-size: 50px;
+	}
+}
+@media(min-width: 1500px){
+	.buy1{
+		width: 31%;
+	}
+	
+	.btn_title{
+		width: 44%;
+	}
+	
+	.btn_title{
+		font-size: 50px;
+	}
+}
+
+
+
+
+
+
+/* 以下好像都沒用到 因為中途版面有做修改 怕之後會用到 所以我先不刪掉*/
+
+/* 包member的大區塊 */
+/* .member_all{ */
+	/* position: relative; */
+	/* left: 5%; */
+	/* width: 90%; */
+	/* margin-top: 30px; */
+/* } */
+
+
+
+
+
+/* 會員資料裡的項目*/
+/* .member_item{ */
+	/* display: flex; */
+	/* justify-content: start; */
+	/* flex-wrap: wrap; */
+	/* font-size: 27px; */
+	/* margin-bottom: 30px; */
+	/* color: blue; */
+	/* padding: 20px; */
+	/* background-color: #F5DEB3; */
+/* } */
+
+
+/* 會員的資料 全部框框 */
+/* .member_info{ */
+	/* background-color: #F5DEB3; */
+	/* padding: 20px; */
+	/* margin-right: 20px; */
+/* } */
+
+
+
+/* 會員修改 */
+/* .member_revise{ */
+	/* background-color: #F5DEB3; */
+	/* padding: 20px; */
+/* } */
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+/* 管理清單的那一橫列 */
+.manage_list{
+	position: relative;
+	top: 50px;
+	left: 10%;
+	width: 80%;
+}
+
+/* 全部的選單 */
+.manage_list > div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 45px;
+	font-size: 32px;
+	border-radius: 999px;
+	height: 80px;
+	color: white;
+}
+
+.manage_list > div:hover{
+	text-decoration: underline;
+	opacity: 0.8;
+}
+
+/* 選單被滑過的時候 */
+.manage_list > div:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+/* 商品管理 */
+
+.title_good{
+	display: flex;
+	justify-content: center;
+	color: #ffa500;
+	font-size: 64px;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

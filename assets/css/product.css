@@ -1,0 +1,174 @@
+
+/* 燈泡類 xx類 的文字 */
+.class{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 45px;
+	font-size: 32px;
+	border-radius: 999px;
+	position: relative;
+	left: 10%;
+	width: 80%;
+	height: 80px;
+	color: white;
+}
+
+/* 燈管的整個區塊 出現與消失*/
+#bulb_cont, #ruler_cont, #screwdriver_cont, #screw_cont, #board_cont, #board_cont, #switch_cont{
+	display: none;
+	/* is me   is me   is me   is me   is me   is me   is me   is me is me   is me   is me   is me   is me   is me   is me   is me */
+}
+#bulb_text, #ruler_text, #screwdriver_text, #screw_text, #board_text, #switch_text{
+	cursor: pointer;
+}
+#bulb_text:hover, #ruler_text:hover, #screwdriver_text:hover, #screw_text:hover, #board_text:hover, #switch_text:hover{
+	text-decoration: underline;
+}
+
+
+.btn-green{
+	width: 250px !important;
+}
+
+
+/* 各個網頁的大標題 */
+.title_spe{
+	text-align: center;
+	margin: 20px 0px;
+	font-size: 80px;
+	color: black !important;
+	/* color: #ffa500; */
+	/* color: red; */
+	/* background-color: #ddd; */
+}
+
+
+
+.product_spec{
+	/* width: 31.5%; */
+	padding: 25px;
+	/* height: 600px; */
+	margin: 0px 10px 30px;
+	border: 1px solid gray;
+	border-radius: 30px;
+	/* background-color: #eff; */
+	background-color: #ffe;
+	/* background-color: #ffeeee; */
+	box-shadow: 9px 9px 8px;
+}
+
+@media(min-width: 0px){
+	.product_spec{
+		width: 90%;
+	}
+	
+	.carousel{
+		height: 200px;
+	}
+	
+	.stra_line, #hr_min{
+		display: none;
+	}
+	
+	.link > div{
+		width: 100%;
+	}
+	
+	.link_input{
+		display: none;
+	}
+	
+	.burger_all{
+		display: flex;
+	}	
+}
+@media(min-width: 320px){
+	.product_spec{
+		width: 90%;
+	}
+	
+	.carousel{
+		height: 200px;
+	}
+	
+	.stra_line, #hr_min{
+		display: none;
+	}
+	
+	.link > div{
+		width: 100%;
+	}
+	
+	.link_input{
+		display: none;
+	}
+	
+	.burger_all{
+		display: flex;
+	}
+
+}
+@media(min-width: 600px){
+	.product_spec{
+		width: 90%;
+	}
+	
+	.carousel{
+		height: 340px;
+	}
+	
+	.stra_line, #hr_min{
+		display: inline;
+	}
+	
+	.link > div{
+		width: 20%;
+	}
+	
+	.link_input{
+		display: flex;
+	}
+	
+	.burger_all{
+		display: none;
+	}
+	
+
+}
+@media(min-width: 900px){
+	.product_spec{
+		width: 45%;
+	}
+	
+	.carousel{
+		height: 480px;
+	}
+	
+	.stra_line, #hr_min{
+		display: inline;
+	}
+	
+	.link > div{
+		width: 20%;
+	}
+}
+@media(min-width: 1200px){
+	.product_spec{
+		width: 31%;
+	}
+	
+	.link > div{
+		width: 20%;
+	}
+}
+@media(min-width: 2000px){
+	.product_spec{
+		/* width: 23%; */
+	}
+	
+	.link > div{
+		width: 20%;
+	}
+}

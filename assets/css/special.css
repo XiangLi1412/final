@@ -1,0 +1,328 @@
+/* 單一圖片 */
+.sing_img_all{
+	/* width: 420px; */
+	/* height: 200px; */
+	/* background-color: #ccc; */
+}
+
+/* 單一產品內容 */
+.sing_con_all{
+	/* width: 420px; */
+	padding: 20px;
+	margin-left: 20px;
+	/* margin-top: -10px; */
+	/* height: ; */
+	/* background-color: #eee; */
+}
+
+/* 單一照片 */
+.sing_img{
+	width: 100%;
+	/* opacity: 0.8; */
+}
+
+
+/* 全部 */
+.img_cont{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+
+/* 官方旗艦店... */
+.official{
+	font-size: 18px;
+	/* color: gray; */
+}
+
+
+
+/* 品名 */
+.prod_name{
+	/* margin: 15px 0px; */
+	font-weight: bold;
+}
+
+/* 水平線 */
+.line{
+	margin: 45px 0px 20px;
+	width: 90%;
+	height: 2px;
+	background-color: gray;
+}
+
+.line2{
+	margin-top: -20px;
+	width: 90%;
+	height: 2px;
+	background-color: gray;
+}
+
+
+/* 大標題 複寫 */
+.title_hot{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+
+/* 為了要讓大框框置中 */
+.relate{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+
+/* 包relate的全部產品 */
+.relate_all{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 90%;
+	/* height: 500px; */
+	/* background-color: #ccc; */
+}
+
+
+/* 單一產品 */
+.relate_prod{
+	/* width: 31.5%; */
+	padding: 25px;
+	/* height: 600px; */
+	margin: 0px 10px 30px;
+	border: 1.5px solid black;
+	border-radius: 30px;
+	/* background-color: #eff; */
+	/* background-color: #f2f2f2; */
+	/* background-color: #ffeeee; */
+	box-shadow: 9px 9px 8px;
+}
+
+
+/* 置中 */
+.talk_all{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 80%;
+	/* flex-direction: column; */
+	/* align-items: center; */
+}
+
+
+
+
+/* 使用者給的留言 */
+.talk{
+	display: flex;
+	width: 60%;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px 0px;
+	border: 1px dashed black;
+	margin-bottom: 30px;
+	background-color: #ffeeee;
+}
+
+.talk > div{
+	margin-bottom: 10px;
+}
+
+
+/* 評論內容 */
+.comt_cont{
+	width: 60%;
+}
+
+
+
+/* textarea */
+.txtae{
+	width: 80%;
+	margin-bottom: 30px;
+	height: 150px;
+	min-height: 100px;
+	max-height: 200px;
+}
+.txtae:focus{
+	outline: 2px solid red;
+}
+
+
+/* 送出按鈕 */
+.btn-send{
+	font-size: 20px !important;
+}
+
+
+#star1, #star2, #star3, #star4, #star5{
+	cursor: pointer;
+}
+
+.position{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	margin-bottom: -30px;
+}
+
+
+@media(min-width: 0px){
+	.relate_prod{
+		width: 90%;
+	}
+	
+	.talk{
+		width: 100%;
+	}
+	
+	.comt_cont{
+		width: 87%;
+	}
+	
+	.sing_img_all{
+		width: 300px;
+	}
+	
+	.sing_con_all{
+		width: 300px;
+	}
+	
+	.img_cont{
+		display: block;
+	}
+}
+@media(min-width: 320px){
+	.relate_prod{
+		width: 90%;
+	}
+	
+	.sing_img_all{
+		width: 320px;
+	}
+	
+	.sing_con_all{
+		width: 320px;
+	}
+	
+	.img_cont{
+		display: flex;
+		justify-content: center;
+	}
+}
+@media(min-width: 600px){
+	.relate_prod{
+		width: 90%;
+	}
+	
+	.talk{
+		width: 80%;
+	}
+	
+	.comt_cont{
+		width: 70%;
+	}
+	
+	.sing_img_all{
+		width: 500px;
+	}
+	
+	.sing_con_all{
+		width: 500px;
+	}
+	
+	.img_cont{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+@media(min-width: 900px){
+	.relate_prod{
+		width: 45%;
+	}
+	
+	.talk{
+		width: 60%;
+	}
+	
+	.comt_cont{
+		width: 70%;
+	}
+	
+	.sing_img_all{
+		width: 420px;
+	}
+	
+	.sing_con_all{
+		width: 400px;
+	}
+}
+@media(min-width: 1200px){
+	.relate_prod{
+		width: 23%;
+	}
+	
+	.talk{
+		width: 46%;
+	}
+	
+	.comt_cont{
+		width: 70%;
+	}
+	
+	.sing_img_all{
+		width: 430px;
+	}
+	
+	.sing_con_all{
+		width: 400px;
+	}
+}
+@media(min-width: 2000px){
+	.relate_prod{
+		width: 23%;
+	}
+	
+	.talk{
+		width: 46%;
+	}
+	
+	.comt_cont{
+		width: 70%;
+	}
+	
+	.sing_img_all{
+		width: 400px;
+	}
+	
+	.sing_con_all{
+		width: 420px;
+	}
+}
+
+@media(min-width: 2400px){
+	
+	.sing_img_all{
+		width: 720px;
+	}
+	
+	.sing_con_all{
+		width: 520px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

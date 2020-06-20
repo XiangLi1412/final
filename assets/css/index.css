@@ -1,0 +1,634 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+.body{
+	font-size: 20px;
+	font-family: "微軟正黑體";
+	/* background-color: #eff; */
+	/* background-image: url(../image/9.jpg); */
+	/* background-attachment: fixed; */
+	/* background-size: cover; */
+}
+
+/* 導引列 */
+.bar_line{
+	background-color; #aaa;	
+}
+
+/* 漢堡 */
+.burger{
+
+}
+
+.burger_all{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	left: 10px;
+	font-size: 40px;
+	color: white;
+	border: #007bff 2px solid;
+	background-color: #007bff;
+}
+
+.burger_all:hover{
+	color: #007bff;
+	background-color: white;
+}
+
+
+
+/* 最上面綠色 */
+.top{
+	height: 25px;
+}
+
+/* 擺電話 上班時間 的大區塊 */
+.header{
+	display: flex;
+	align-items: center;
+	height: 80px;
+	font-size: 24px;
+	border-bottom: 1px solid gray;
+	/* background-color: #ffffee; */
+	/* background-color: rgba(204, 204, 255, 0.45); */
+	/* background-color: #ddddff; */
+	/* background-color: #fff; */
+}
+
+/* 公司名稱 */
+.company_name{
+	position: relative;
+	left: 20px;
+}
+
+/* 公司電話 */
+.firm_img{
+	position: relative;
+	left: 20px;
+	height: 57px;
+	cursor: pointer;
+	/* width: 20px; */
+}
+
+
+/* 電話那個區塊 */
+.phone{
+	position: absolute;
+	right: 10px;
+}
+
+/* 向使用者問好 */
+.mr10{
+	margin-right: 10px;
+}
+
+/* 最上面的登入文字 */
+.signin_top{
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.signin_top:hover{
+	color: #4ca6ff;
+}
+
+
+/* 擺各個連結的文字大外框 */
+.link_input{
+	display: flex;
+	/* justify-content: space-around; */
+	/* align-items: center; */
+	/* height: 60px; */
+	font-size: 26px;
+	color: #ffffff;
+	/* background-color: #ddd; */
+}
+
+/* 擺連結文字的框框 */
+.link{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	/* height: 60px; */
+	/* width: calc(100% - 350px); */
+	width: calc(100%);
+	justify-content: space-around;
+	/* border: black 1px solid; */
+	/* background-color: #ddd; */
+	z-index: 990;
+}
+
+/* 連結下的全部div */
+.link > div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* height: 60px; */
+	padding: 10px 0px;
+	width: 19.5%;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.link > div:hover{
+	text-decoration: underline;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 輸入框外面的大框框 */
+.search_all{
+	display: flex;
+	align-items: center;
+	width: 352px;
+	/* background-color: #aaa; */
+}
+
+/* 輸入框 */
+.search_input{
+	height: 30px;
+	width: 270px;
+	position: absolute;
+	right: 20px;
+}
+
+/* 圖片輪播 */
+.carousel{
+	/* margin-top: 50px; */
+	/* position: relative; */
+	width: 100%;
+	/* height: 300px; */
+}
+
+
+/* bootstrap start */
+
+.carou{
+	position: relative;
+	/* z-index: -1; */
+}
+
+.carousel-caption {
+	text-shadow: 2px 2px 3px #353866;
+	/* color: red; */
+	color: floralwhite;
+}
+
+.arr_left{
+	position: absolute;
+	font-size: 64px;
+	width: 10px;
+	height: 10px;
+	top: 40%;
+	color: #222;
+	left: 8% !important;
+	cursor: pointer;
+	/* background-color: red; */
+}
+.arr_right{
+	position: absolute;
+	font-size: 64px;
+	width: 10px;
+	height: 10px;
+	top: 40%;
+	color: #222;
+	right: calc(4% + 50px) !important;
+	cursor: pointer;
+	/* background-color: red; */
+}
+.arr_left:hover, .arr_right:hover{
+	color: #777777;
+}
+
+
+.active{
+	background-color: #222 !important;
+}
+
+
+.w_expand{
+	/* font-size: 50px !important; */
+	width: 60px !important;
+	height: 60px !important;
+	/* color: red !important; */
+	/* padding: 10px !important; */
+	background-color: black !important;
+}
+
+
+.w100{
+	height: 600px !important;
+	width: 100% !important;
+}
+
+
+
+
+/* bootstrap end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* https://i-memo.blogspot.com/2013/11/html5css.html */
+/* 閃爍 */
+.blink{
+	color: red;
+	animation-duration: 0.5s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 0.66;
+    }
+    66% {
+        opacity: 0.33;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* 熱銷精選的文字 */
+.title_hot{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 80px;
+	/* color: #ffa500; */
+	/* color: red; */
+	/* background-color: #ddd; */
+}
+
+/* 為了要讓大框框置中 */
+.hot{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+/* 包hot的全部產品 */
+.hot_all{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 94%;
+	/* height: 500px; */
+	/* background-color: #ccc; */
+}
+
+/* 單一產品 */
+.hot_product{
+	/* width: 31.5%; */
+	padding: 25px;
+	/* height: 600px; */
+	margin: 0px 10px 30px;
+	border: 1.5px solid black;
+	border-radius: 30px;
+	/* background-color: #bfffbf; */
+	background-color: #ffd;
+	/* background-color: #f2f2f2; */
+	/* background-color: #ffeeee; */
+	box-shadow: 9px 9px 8px;
+}
+
+
+
+/* 第x名 名次 */
+.rank{
+	/* color: red; */
+	/* text-decoration: underline; */
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+/* 熱銷排名 產品名稱 */
+.prod_name{
+	margin-bottom: 20px;
+}
+
+/* 熱銷排名的圖片 */
+.rank_img{
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+/* 水平效果 */
+.flex_d{
+	display: flex;
+}
+
+
+/* 數量 文字 */
+.quan_text{
+	margin-right: 5px;
+}
+
+
+
+/* 數量 輸入框 */
+.quantity{
+	width: 30%;
+	padding: 0px 10px;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+/* 狀態 可出貨 */
+.status{
+	margin-bottom: 15px;
+}
+
+
+
+/* 置中 */
+.cen{
+	display: flex;
+	justify-content: center;
+}
+
+
+/* 刪除線效果 原始價格 */
+.price_1{
+	text-decoration: line-through;
+	/* color: gray; */
+	color: red;
+}
+
+/* 實際價格 */
+.price_2{
+	position: relative;
+	left: 30px;
+	margin-bottom: 15px;
+}
+
+/* 上市日期 */
+.new_date{
+	margin-bottom: 15px;
+}
+
+/* footer */
+.footer{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 10px 0px;
+	/* font-size: 62px; */
+	/* height: 60px; */
+	/* background-color: #ccc; */
+}
+
+/* 地圖 */
+iframe{
+	position: relative;
+	left: 5%;
+	margin-bottom: 50px;
+}
+
+input:focus{
+	outline: 2px red solid;
+}
+
+
+
+@media(min-width: 0px){
+	.hot_product{
+		width: 90%;
+	}
+	
+	.carousel{
+		height: 200px;
+	}
+	
+	.stra_line, #hr_min{
+		display: none;
+	}
+	
+	.link > div{
+		width: 100%;
+	}
+	
+	.link_input{
+		display: none;
+	}
+	
+	.burger_all{
+		display: flex;
+	}
+	
+
+	
+}
+@media(min-width: 320px){
+	.hot_product{
+		width: 90%;
+	}
+	
+	.carousel{
+		height: 300px;
+	}
+	
+	.stra_line, #hr_min{
+		display: none;
+	}
+	
+	.link > div{
+		width: 100%;
+	}
+	
+	.link_input{
+		display: none;
+	}
+	
+	.burger_all{
+		display: flex;
+	}
+
+}
+@media(min-width: 600px){
+	.hot_product{
+		width: 90%;
+	}
+	
+	.carousel{
+		height: 340px;
+	}
+	
+	.stra_line, #hr_min{
+		display: inline;
+	}
+	
+	.link > div{
+		width: 20%;
+	}
+	
+	.link_input{
+		display: flex;
+	}
+	
+	.burger_all{
+		display: none;
+	}
+	
+
+}
+@media(min-width: 900px){
+	.hot_product{
+		width: 45%;
+	}
+	
+	.carousel{
+		height: 700px;
+	}
+	
+	.stra_line, #hr_min{
+		display: inline;
+	}
+	
+	.link > div{
+		width: 20%;
+	}
+}
+@media(min-width: 1200px){
+	.hot_product{
+		width: 31.5%;
+	}
+	
+	.link > div{
+		width: 20%;
+	}
+}
+@media(min-width: 2000px){
+	.hot_product{
+		width: 32%;
+	}
+	
+	.link > div{
+		width: 20%;
+	}
+}
+
+
+.bg_fffbdf{
+	background-color: #fffbdf !important;
+}
+.bg_black{
+	background-color: #222 !important;
+}
+.bg_red{
+	background-color: #e74d3b !important;
+}
+.bg_orange{
+	background-color: #e57f21 !important;
+}
+.bg_green{
+	background-color: #11c65d !important;
+}
+.bg_blue{
+	background-color: #2388c7 !important;
+}
+.bg_violet{
+	background-color: #4625b0 !important;
+}
+.bg_purple{
+	background-color: #8d1acd !important;
+}
+.bg_white{
+	background-color: #ffffff !important;
+}
+.bg_brown{
+	background-color: #a0522d !important;
+}
+.bg_gray{
+	background-color: gray !important;
+}
+.bg_lbrown{
+	background-color: #cd853f !important;
+}
+.bg_lorange{
+	background-color: #ff8000 !important;
+}
+.bg_lred{
+	background-color: #ff7373 !important;
+}
+.bg_lgreen{
+	background-color: #00b32d !important;
+}
+.bg_lblue{
+	background-color: #4c79ff !important;
+}
+.bg_lviolet{
+	background-color: #5c26ff !important;
+}
+.bg_lpurple{
+	background-color: #a64cff !important;
+}
+
+.bg_dgreen{
+	background-color: #0097a0 !important;
+}
+
+
+
+.purple{
+	color: #8d1acd;
+}
+.blue{
+	color: #2388c7;
+}
+.green{
+	color: #11c65d;
+}
+.orange{
+	/* color: #e57f21; */
+	color: #ffa500;
+	/* color: #FF5511; */
+	/* color: #FF7744; */
+}
+.red{
+	color: #e74d3b;
+}
+.yellow{
+	color: #fbbc04;
+	/* color: #FFFF00; */
+}
+.gray{
+	color: gray;
+}
+
+.lgray{
+	color: #dadce0;
+}
+

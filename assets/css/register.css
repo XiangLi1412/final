@@ -1,0 +1,18 @@
+/* 訂閱電子報的框框 */
+.checkbox_all{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+/* 勾勾框 */
+.checkbox{
+	width: 30px;
+	height: 30px;
+	background-color: red;
+}
+
+/* 打勾勾可以享有的服務 */
+.checkbox_text{
+	text-shadow: none;
+}

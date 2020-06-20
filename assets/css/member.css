@@ -1,0 +1,119 @@
+/* 標題 */
+.title_member{
+	display: flex;
+	justify-content: center;
+	/* color: #ffa500; */
+	font-size: 64px;
+	margin-top: 30px;
+	margin-bottom: -30px;
+}
+
+/* 清單 */
+.member_list{
+	position: relative;
+	top: 50px;
+	/* left: 2%; */
+	/* width: 96%; */
+}
+
+
+.product{
+	width: 31%;
+	padding: 25px;
+	margin: 0px 10px 50px;
+	border: 1px solid black;
+	border-radius: 30px;
+	background-color: #eee;
+	box-shadow: 9px 9px 8px;
+}
+
+
+.query1{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	/* width: 40%; */
+	padding: 25px;
+	margin: 0px 10px 30px;
+	border: 1px solid black;
+	border-radius: 30px;
+	/* background-color: #eee; */
+	box-shadow: 9px 9px 8px;
+	background-color: #ffffee;
+	/* font-size: 30px !important; */
+}
+
+.revise{
+	color: black !important;
+}
+
+.revise_input{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.query1 > div{
+	margin-bottom: 20px;
+}
+
+.input_trial{
+	width: 90%;
+}
+
+
+@media(min-width: 320px){
+	.query1{
+		width: 90%;
+	}
+	
+	.revise_input{
+		width: 100%;
+	}
+}
+@media(min-width: 600px){
+	.query1{
+		width: 70%;
+	}
+	
+	.revise_input{
+		width: 85%;
+	}
+}
+@media(min-width: 900px){
+	.query1{
+		width: 50%;
+	}
+	
+	.revise_input{
+		width: 75%;
+	}
+}
+@media(min-width: 1200px){
+	.query1{
+		width: 40%;
+	}
+	
+	.revise_input{
+		width: 75%;
+	}
+}
+@media(min-width: 1500px){
+	.query1{
+		width: 30%;
+	}
+	
+	.revise_input{
+		width: 75%;
+	}
+}
+@media(min-width: 1800px){
+	.query1{
+		width: 25%;
+	}
+	
+	.revise_input{
+		width: 60%;
+	}
+}

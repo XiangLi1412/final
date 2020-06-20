@@ -1,0 +1,28 @@
+@media(min-width: 0px){
+	/* .company_name{ */
+		/* display: none; */
+	/* } */
+	
+	.firm_img{
+		display: none;
+	}
+	
+}
+@media(min-width: 320px){
+	/* .company_name{ */
+		/* display: none; */
+	/* } */
+	
+	.firm_img{
+		display: none;
+	}
+}
+@media(min-width: 600px){
+	/* .company_name{ */
+		/* display: inline; */
+	/* } */
+	
+	.firm_img{
+		display: inline;
+	}
+}

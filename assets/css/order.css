@@ -1,0 +1,8 @@
+.new_order{
+	display: flex;
+	justify-content: center;
+	/* color: #ffa500; */
+	font-size: 64px;
+	margin-top: 60px;
+	margin-bottom: -50px;
+}

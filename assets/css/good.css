@@ -1,0 +1,134 @@
+.title_good{
+	text-align: center;
+	/* padding-top: 20px; */
+	font-size: 80px;
+	margin-bottom: -20px;
+	/* color: #ffa500; */
+	background-color: white;
+}
+
+/* 燈泡類 xx類 的文字 */
+.class{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 45px;
+	font-size: 32px;
+	border-radius: 999px;
+	position: relative;
+	left: 10%;
+	width: 80%;
+	height: 80px;
+	color: white;
+}
+
+
+/* 燈管的整個區塊 出現與消失*/
+#bulb_cont, #ruler_cont, #screwdriver_cont, #screw_cont, #board_cont, #board_cont, #switch_cont{
+	display: none;
+	/* is me   is me   is me   is me   is me   is me   is me   is me is me   is me   is me   is me   is me   is me   is me   is me */
+}
+#bulb_text:hover, #ruler_text:hover, #screwdriver_text:hover, #screw_text:hover, #board_text:hover, #switch_text:hover{
+	text-decoration: underline;
+}
+
+/* 包產品的清單 */
+.block_list{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 94%;
+	/* padding-top: 10px; */
+	/* background-color: #ccc; */
+}
+
+
+/* 單一產品 */
+.product{
+	width: 31%;
+	padding: 25px;
+	margin: 0px 10px 50px;
+	border: 1px solid black;
+	border-radius: 30px;
+	background-color: #eee;
+	box-shadow: 9px 9px 8px;
+}
+
+
+/* 全部INPUT */
+input{
+	width: 210px;
+}
+input:focus{
+	outline: red solid 2px;
+}
+
+/* 全部font */
+font{
+	padding-right: 15px;
+}
+
+/* 修改文字 */
+.revise{
+	font-size: 26px;
+	margin-bottom: 10px;
+	color: red;
+}
+
+
+/* 每行的修改項目 */
+.revise_item{
+	margin-bottom: 10px;
+}
+
+
+/* 按鈕 */
+.btn{
+	margin-top: 20px;
+	width: 120px !important;
+	font-size: 24px !important; 
+	font-weight: bold !important;
+	color: white !important;
+}
+
+/* 複寫 */
+.btn-danger{
+	background-color: #e74d3b !important;
+}
+.btn-warning{
+	background-color: #e57f21 !important;	
+}
+.btn-success{
+	background-color: #11c65d !important;
+}
+.btn-primary{
+	background-color: #2388c7 !important;
+}
+.btn-info{
+	background-color: #4625b0 !important;
+}
+
+/* 不是複寫 */
+.btn_orange{
+	background-color: #e57f21 !important;
+}
+
+
+/* 以上 套用 */
+
+@media(min-width: 320px){
+	.product{
+		width: 90%;
+	}
+}
+@media(min-width: 600px){
+	.product{
+		width: 46%;
+	}
+}
+@media(min-width: 1200px){
+	.product{
+		width: 31%;
+	}
+}
