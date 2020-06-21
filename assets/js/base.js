@@ -8,6 +8,10 @@ function toSignIn2(){
 	window.location.href="signIn.html";
 }
 
+function toSignIn3(){
+	window.location.href="../signIn.html";
+}
+
 
 function img_toindex1(){
 	window.location.href="index.html";
